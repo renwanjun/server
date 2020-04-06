@@ -1,16 +1,19 @@
-"use strict";
+import _Map from "@babel/runtime-corejs2/core-js/map";
+import _Promise from "@babel/runtime-corejs2/core-js/promise";
 
-require("@babel/polyfill");
-
-(function () {
-  console.log(Math.pow(2, 2));
+(() => {
+  console.log(2 ** 2);
 })();
 
-var study = function study() {};
+const study = () => {};
 
-var arr1 = [1, 2, 33];
-var arr2 = [].concat(arr1);
-var exponentiation = Math.pow(2, 2); // 新增API
+const arr1 = [1, 2, 33];
+const arr2 = [...arr1];
+const exponentiation = 2 ** 2; // 新增API
 
-new Promise(function () {});
-new Map();
+new _Promise(() => {});
+new _Map();
+
+class Text {}
+
+class ddddd {}

@@ -1,5 +1,6 @@
 
-import "@babel/polyfill"; 
+
+
 (() => {
     console.log(2 ** 2)
 })()
@@ -14,3 +15,9 @@ const exponentiation = 2 ** 2
 // 新增API
 new Promise(() => { })
 new Map()
+class Text{
+    
+}
+class ddddd{
+
+}
