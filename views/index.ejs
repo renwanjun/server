@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM 事件机制</title>
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <script type="application/javascript" src="index.js"></script>
+        <!-- <script type="application/javascrip" src="Polyfill.js"></script> -->
+        <!-- <script defer src="src/SetTimeout.js"></script> -->
+        <style>
+          
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            dsdsfds
+            <p id="child">sdfdsfsdfw </p>
+            <p>
+                <span>123</span>
+                abc</p>
+        </div>
+        <div>
+            <form name="personalInfoForm">
+                <label>姓名<input id="name" name="name" value="your name"></label>
+                <label>年龄<input id="age" name="age"></label>
+                <label for="description">自我描述<input id="description" size="20" maxlength="50" placeholder="自我描述"></label>
+                <div>
+                    <span>性别</span>
+                    <input id="man"  type="radio"><label for="man">男</label>
+                    <input id="woman" type="radio"><label for="woman">女</label>
+                </div>
+                <label for="resume">简历<input id="resume" name="resume" type="file"></label>
+                <!-- 提交按钮 -->
+                <input name="submit" type="submit" value="确定">
+                <!-- 重置按钮 -->
+                <input name="reset" type="reset" value="Reset Form">
+            </form>
+        </div>
+        <!-- 定义一个窗口 -->
+    </body>
+</html>
+<script>
+    console.log(document.readyState)
+</script>
+<!-- <script type="text/javascript" src="index.js"></script> -->
