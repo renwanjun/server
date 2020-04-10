@@ -19,7 +19,7 @@ read(url,(err,result)=>{
 
 const port=process.env.port || 3000
 app.set('port',port)
-app.set('vies')
+// app.set('views')
 // app.use加载项目所需的中间件
 app.use(bodyParser.json()) // 支持编码为json的请求消息体
 app.use(bodyParser.urlencoded({extended:true})) // 支持编码为表单的请求消息体
