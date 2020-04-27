@@ -1,7 +1,7 @@
 const presets = [
     ["@babel/preset-env", {
         "modules":false,
-        "useBuiltIns": "usage",
+        "useBuiltIns": "usage", // 启用这一项，会参考目标浏览器和代码中所使用的特性来按需加入polyfill 
         "corejs":"3",
         "targets":{
             "node":"current"
