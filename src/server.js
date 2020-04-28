@@ -7,6 +7,7 @@ var logger = require('morgan');
 // 自定义校验API
 var validate=require('./middleware/validate')
 
+// 路由映射
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var entries = require('./routes/entries');
@@ -14,13 +15,14 @@ var entries = require('./routes/entries');
 var app = express();
 
 
-// view engine setup
+// view engine setup 模版引擎 模版文件夹位置
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// 程序输出json格式更易读
+// 设置程序输出json格式更易读
 app.set('json spaces', 2)
 
+// 日志
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // 开启扩展的消息体解析器
@@ -63,8 +65,4 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
-
 module.exports = app;

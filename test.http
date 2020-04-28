@@ -1,7 +1,10 @@
 @port=3000
 @host=127.0.0.1
 
-### 测试接口 获取文件
+###  获取列表
+GET http://{{host}}:{{port}} HTTP/1.1
+
+### 获取文件
 GET http://{{host}}:{{port}}/articles HTTP/1.1
 
 
@@ -13,7 +16,7 @@ Content-Type: application/json
 }
 
 ### 删除指定文章
-DELETE http://{{host}}:{{port}}/127.0.0.1:3000/articles/-1 HTTP/1.1
+DELETE http://{{host}}:{{port}}/articles/-1 HTTP/1.1
 
 ### cURL命令 新建文章
 curl --data "title=Example 2" http:{{host}}:{{port}}/articles
